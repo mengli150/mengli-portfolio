@@ -5,10 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #0A192F; /* Dark blue */
+            color: #64B6FF; /* Light blue */
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            min-height: 100vh; /* Ensure body takes full height */
+            flex-direction: column;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            text-align: center;
+            z-index: 1;
+            width: 100%;
+        }
+
+        /* Title (Name) Styling */
+        h1 {
+            font-size: 5em; /* Larger font size */
+            margin-bottom: 0.3em;
+            font-weight: 700; /* Bolder weight for impact */
+            color: #64b6ff; /* Light blue color */
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeIn 1.5s ease-in-out forwards; /* Keep the element visible after animation */
+        }
+
+        /* Subtitle Styling */
+        p {
+            font-size: 1.8em;
+            margin-bottom: 2em;
+            color: #a8dadc; /* Light blue color */
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeIn 2s ease-in-out forwards; /* Keep the element visible after animation */
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #64b6ff; /* Light blue color */
+            font-size: 1.3em;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1faee; /* Lighter blue on hover */
+            transform: translateY(-5px); /* Slight movement on hover */
+        }
+
+        /* Fade-In Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Start with a slight upward shift */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Set back to normal position */
+            }
+        }
+
+        /* Delay for each element */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .delay {
+            animation-delay: 0.5s;
+        }
+
+        .delay-2 {
+            animation-delay: 1s;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="fade-in">Your Name</h1>
+        <h1 class="fade-in">Meng Li.</h1>
         <p class="fade-in delay">IT Student | Passionate About AI & Technology</p>
         <nav class="fade-in delay-2">
             <ul>
